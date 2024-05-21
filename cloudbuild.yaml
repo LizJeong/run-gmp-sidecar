@@ -65,7 +65,7 @@ steps:
         "replace",
         "run-service.yaml",
         "--region",
-        "${_REGION}",
+        "asia-southeast1",
       ]
     id: DEPLOY_MULTICONTAINER
     waitFor:
@@ -83,7 +83,7 @@ steps:
         "my-cloud-run-service",
         "policy.yaml",
         "--region",
-        "${_REGION}",
+        "asia-southeast1",
         "--quiet",
       ]
     id: ALLOW_UNAUTHENTICATED
