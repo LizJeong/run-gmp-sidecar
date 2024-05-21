@@ -11,7 +11,7 @@ RUN make build
 
 FROM alpine:latest
 RUN apk add --no-cache ca-certificates
-RUN apk add openssl=3.1.4-r6 && apk upgrade openssl --no-cache
+RUN apk add openssl && apk upgrade openssl --no-cache
 COPY --from=builder /sidecar/bin/rungmpcol /rungmpcol
 COPY --from=builder /sidecar/bin/run-gmp-entrypoint /run-gmp-entrypoint
 
