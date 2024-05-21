@@ -93,7 +93,7 @@ steps:
 substitutions:
   _REGION: ${LOCATION}
   _GCP_PROJECT: ${PROJECT_ID}
-  _REGISTRY: ${_REGION}-docker.pkg.dev/${_GCP_PROJECT}/run-gmp
+  _REGISTRY: asia-southeast1-docker.pkg.dev/initia-devnet/run-gmp
   _IMAGE_APP: ${_REGISTRY}/sample-app
   _IMAGE_COLLECTOR: ${_REGISTRY}/collector
   _RUN_GMP_CONFIG: run-gmp-config
